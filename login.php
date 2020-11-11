@@ -10,6 +10,7 @@ echo "<br>";
 
 
 $myConn = new DB;
+$username = addslashes($username);
 
 $query = "SELECT * FROM user WHERE username = '$username' ";
 
